@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+*:where(
+    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+  ) {
+  all: unset;
+  display: revert;
+}
+
+body {
+  font-family: "Permanent Marker", cursive;
+  background-color: #5abcd8;
+}
+
+h1 {
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 200%);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.webgl {
+  position: fixed;
+  inset: 0;
+  outline: none;
+}
